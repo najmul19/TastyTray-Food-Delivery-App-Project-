@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/darkblue"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            app:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/tvUP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Upload Profile"
+            android:textColor="@color/white"
+            android:alpha="0.9"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#EAEAEA"
+            android:backgroundTint="#FBFBFB" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-40dp"
+                app:cardCornerRadius="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:gravity="center"
+                        android:hint="username"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="@color/darkblue"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:gravity="center"
+                        android:hint="phone number"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColor="@color/darkblue"
+
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:gravity="center"
+                        android:hint="tastytray19@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textColor="@color/darkblue"
+
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColor="@color/darkblue"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/etConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="confirm password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColor="@color/darkblue"
+                        android:textSize="22sp" />
+
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/btn6"
+                        android:text="Register"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="50dp"
+                            android:layout_height="2dp"
+                            android:alpha="0.7"
+                            android:background="@color/darkblue"
+                            android:backgroundTint="@color/darkblue" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:alpha="0.7"
+                            android:text="Or With"
+                            android:textColor="@color/darkblue" />
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="50dp"
+                            android:layout_height="2dp"
+                            android:alpha="0.7"
+                            android:background="@color/darkblue"
+                            android:backgroundTint="@color/darkblue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSignUpFacebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/fbbackground"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Facebook"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvSignUpGoogle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/googlebackground"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Google"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="Already have an account? Login"
+                        android:textColor="@color/darkblue"
+                        android:alpha="0.7"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

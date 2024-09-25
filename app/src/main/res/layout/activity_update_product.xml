@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1F2F46"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/insert_back"
+        android:textColorHint="@color/halkasada"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:hint="Product Name" />
+
+    <EditText
+        android:id="@+id/etProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/insert_back"
+        android:textColorHint="@color/halkasada"
+        android:textSize="24sp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etProductQuantity"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/insert_back"
+        android:textColorHint="@color/halkasada"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:hint="Product Quantity"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvProductId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/insert_back"
+        android:textColorHint="@color/halkasada"
+        android:textSize="24sp"
+        android:enabled="false"
+        android:hint="Product ID" />
+
+    <ImageView
+        android:id="@+id/ivProductPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:background="@drawable/insert_back"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/burgur" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/insertback_ok"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Select Image"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSearchProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/insertback_ok"
+            android:padding="10dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/green"
+            android:text="Search Product"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnUpdateProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/insertback_ok"
+            android:padding="10dp"
+            android:textColor="@color/green"
+            android:text="Update Product"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
